@@ -54,6 +54,275 @@
     <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    
+    
+    
+    
+    
+    
+
+
+<style>
+
+
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ 
+@media (max-width: 400px) {
+.popup-container {
+    display: none; 
+    left: 50%; 
+    top: 50%; 
+    position: fixed;
+    justify-content: center;  
+    align-items: center;     
+    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%); 
+    width: 63%;
+    max-width: 400px; 
+    background: linear-gradient(to right, rgb(206, 13, 211), rgb(189, 213, 98));
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    border-radius: 8px;
+    z-index: 1000;
+    }
+}
+ 
+
+ 
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.close-popup {
+   display: block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+
+
+}
+
+
+.btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+    .d-block, .post-content, .casino-game img {
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+    }
+    .carousel-inner, .casino-container-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 5px;
+    }
+        
+        #brandList { padding: 20px; }
+        .swiper { width: 100%; height: 100%; }
+        .swiper-slide { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+        
+  .image-container { 
+  	margin: 5px; 
+  	display: flex;
+    border-radius: 10px;
+	border: 2px dotted #ccc;
+	gap: 10px;
+	background: linear-gradient(to right, rgb(238, 100, 81), rgb(255, 0, 255));
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    
+        }
+        
+ .slide-box { 
+   	background: linear-gradient(to right, rgb(238, 100, 81), rgb(255, 0, 255));
+     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+   	  width: 100px; 
+   	  margin: 2px; 
+   	  border-radius: 5px;
+      cursor: pointer;
+   	
+   }
+   .slide-box:hover {
+            background-color: #0056b3;
+        }
+        
+  
+        .slideBtn {
+            background-color: gold;
+            color: white;
+            text-align: center;
+            padding: 5px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            max-width: 100px;
+            height: auto;
+        }
+        .slideBtn:hover {
+            background-color: #0056b3;
+        }
+  .swiper-text {
+    font-size: 26px;           
+    color: #FCCD2A;    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 0 15px 0;        
+    text-align: center;      
+    font-family: 'Arial', sans-serif;
+}
+
+
+
+  
+@media (max-width: 400px) {
+.swiperpop-container {
+	display: none; 
+	position: fixed;
+	left: 50%; 
+    top: 50%; 
+    justify-content: center; 
+    align-items: center;  
+	border-radius: 10px;
+	border: 2px dotted #ccc;
+	flex-direction: column;
+    transform: translate(-50%, -50%); 
+    width: 60%;
+    max-width: 60%; 
+    background: linear-gradient(to right, rgb(238, 100, 81), rgb(255, 0, 255));
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+    z-index: 1000;
+    }
+    .slide-image {
+         
+         height: 100px;
+         width: 100px;
+        }    
+}
+ 
+
+  
+ .game-box-btn {
+   	 margin: 5px;
+     background-color: gold;
+     color: white;
+     text-align: center;
+     padding: 5px 20px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     max-width: 100px;
+     height: auto;
+        }
+        
+        
+ .game-box-btn:hover {
+     background-color: #0056b3;   }
+       
+ 
+ 
+        
+   .game-box-btn {
+       display: inline-block;
+       margin-top: 10px;
+       padding: 10px 15px;
+       background-color: #28a745;
+       border-radius: 10px;
+	border: 2px dotted #ccc;
+	flex-direction: column;
+	border-radius: 10px;
+	gap: 25px;
+	background: #f9f9f9;
+	cursor: pointer;
+            color: green;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        
+        
+        
+ 
+  
+ 
+
+ 
+.slide-text {
+    font-size: 26px;           
+    color: #FCCD2A;    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 0 15px 0;        
+    text-align: center;      
+    font-family: 'Arial', sans-serif;
+}
+
+
+.close-popup {
+	color:  #fff;
+	padding: 5px 8px;   
+    position: absolute;
+    text-align: center;  
+    top: 0;
+    left: 85%;
+    cursor: pointer;
+    font-size: 20px;
+    background:  red; 
+    border-radius: 5px; 
+    display: inline-block; 
+    cursor: pointer;
+
+}
+
+.slideBtnP {
+  display: block;
+  box-sizing: border-box;
+  line-height: 1.35;
+ 
+  text-align: center;
+  font-size: 200%;
+  background: linear-gradient(to right, rgb(255, 255, 0), rgb(0, 255, 0));
+  color: red;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: .1em solid #fff;
+  text-align: center;
+  font-size: 100%;
+  cursor: pointer;
+  padding: 1em;
+}
+	
+    </style>
+
+
 
 </head>
 
@@ -76,9 +345,13 @@
         <div class="preloader-inner">
             <div class="loader"></div>
         </div>
-    </div><!--==============================
+    </div>
+    
+    <!--==============================
     Sidemenu
 ============================== -->
+
+
     <div class="sidemenu-wrapper sidemenu-cart ">
         <div class="sidemenu-content">
             <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
@@ -87,17 +360,12 @@
                 <div class="widget_shopping_cart_content">
                     <ul class="woocommerce-mini-cart cart_list product_list_widget ">
                         <li class="woocommerce-mini-cart-item mini_cart_item">
-                                      
-<div class="image-container">
-  <div class="slide-box" data-id="maswerte" data-image="https://www.maswerte.net/m/icons/icon-192x192.png" data-destination="http://www.maswerte.net/?r=hfu1105">
- <img class="slide-image" src="https://www.maswerte.net/m/icons/icon-192x192.png" onclick="openSwiper(this)" />   
-        </div>       	
-<div class="slide-box" data-id="maswerte" data-image="https://www.maswerte.net/m/icons/icon-192x192.png" data-destination="http://www.maswerte.net/?r=hfu1105">
- <img class="slide-image" src="https://www.maswerte.net/m/icons/icon-192x192.png" onclick="openSwiper(this)" />   
-        </div>
-                        	
-<div class="slide-box" data-id="maswerte" data-image="https://www.maswerte.net/m/icons/icon-192x192.png" data-destination="http://www.maswerte.net/?r=hfu1105">
- <img class="slide-image" src="https://www.maswerte.net/m/icons/icon-192x192.png" onclick="openSwiper(this)" />  </div></div>
+                            <a href="#" class="remove remove_from_cart_button"><i class="far fa-times"></i></a>
+                            <a href="#"><img src="assets/img/product/product_thumb_1_1.jpg" alt="Cart Image">Surgery Hands Gloves</a>
+                            <span class="quantity">1 ×
+                                <span class="woocommerce-Price-amount amount">
+                                    <span class="woocommerce-Price-currencySymbol">$</span>940.00</span>
+                            </span>
                         </li>
                         <li class="woocommerce-mini-cart-item mini_cart_item">
                             <a href="#" class="remove remove_from_cart_button"><i class="far fa-times"></i></a>
@@ -409,7 +677,7 @@ Hero Area
         <div class="hero-inner">
             <div class="container">
                 <div class="hero-style2">
-                    <span class="sub-title"><img src="assets/img/theme-img/title_icon.svg" alt="shape">24/7 Emergency Service</span>
+                    <span class="sub-title"><img src="assets/img/theme-img/title_icon.svg" alt="shape">Hero Ria</span>
                     <h1 class="hero-title2">
                         <span class="title1">Caring for <span class="line-text">Health</span></span>
                         <span class="title2">Caring for You</span>
@@ -442,9 +710,424 @@ Hero Area
         </div>
     </div>
     <!--======== / Hero Section ========-->
+    
+    
+    
+    
+    
+    
+        <!--==============================
+Casino Game Area  
+==============================-->
+
+    
+    <section id="best-casino-site">
+<div class="casino-container-grid">
+
+
+<div class="casino-game" data-id="casino-game"  data-image="https://www.maswerte.net/m/icons/icon-192x192.png" data-destination="http://www.maswerte.net/?r=hfu1105">
+ <img class="post-content" src="https://www.maswerte.net/m/icons/icon-192x192.png" onclick="openPopup(this)" />
+        </div>
+
+ 
+
+<div class="casino-game" data-id="casino-game"  data-image="https://images.1138403.com/wsd-images-prod/iq777tlbf4/fe_setting/h5_logo/wps_LOGO-%E5%A4%A7%E5%B0%BA%E5%AF%B811_20240728134713.png" data-destination="http://www.iq777.mobi/?r=nli8626">
+ <img class="post-content" src="https://images.1138403.com/wsd-images-prod/iq777tlbf4/fe_setting/h5_logo/wps_LOGO-%E5%A4%A7%E5%B0%BA%E5%AF%B811_20240728134713.png" onclick="openPopup(this)" />
+        </div>
+        
+        
+        
+        
+
+<div class="casino-game" data-id="casino-game"  data-image="https://images.1248593.com/wsd-images-prod/magicjlf4/merchant_resource/appdownloadicon/app_download_icon_magicjlf4_20240820123010.png" data-destination="https://dxcf1025.magicjili.xyz/?referralCode=lrl8901">
+ <img class="post-content" src="https://images.1248593.com/wsd-images-prod/magicjlf4/merchant_resource/appdownloadicon/app_download_icon_magicjlf4_20240820123010.png" onclick="openPopup(this)" />
+        </div>
+
+
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.6929183.com/wsd-images-prod/wjtwof2/merchant_resource/appdownloadicon/wps_screenshot-2_(1)_20240219195111.png" data-destination="http://www.wjpesogame.store/?r=spi3164">
+ <img class="post-content" src="https://images.6929183.com/wsd-images-prod/wjtwof2/merchant_resource/appdownloadicon/wps_screenshot-2_(1)_20240219195111.png" onclick="openPopup(this)" />
+        </div>
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://www.animb6.com/m/logo.ab46edf0.gif" data-destination="http://www.animk6.com/?r=uhs5566">
+ <img class="post-content" src="https://www.animb6.com/m/logo.ab46edf0.gif" onclick="openPopup(this)" />
+        </div>
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.6929183.com/wsd-images-prod/winfordbet/merchant_resource/appdownloadicon/app_download_icon_winfordbet_20241011191921.png" data-destination="http://www.perawin7.vip/?r=vdh4882">
+ <img class="post-content" src="https://images.6929183.com/wsd-images-prod/winfordbet/merchant_resource/appdownloadicon/app_download_icon_winfordbet_20241011191921.png" onclick="opePopup(this)" />
+        </div>
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/fbjilif3/merchant_resource/appdownloadicon/wps_250x250_20231029004117.png" data-destination="http://www.fbjili22.vip/?r=huf6425">
+ <img class="post-content" src="https://images.11029984.com/wsd-images-prod/fbjilif3/merchant_resource/appdownloadicon/wps_250x250_20231029004117.png" onclick="openPopup(this)" />
+        </div>
+
+
+
+<div class="casino-game" data-id="casino-game"  data-image="https://www.nfh78.com/m/logo.1138b289.png" data-destination="http://www.t318win.com/?r=gli3552">
+ <img class="post-content" src="https://www.nfh78.com/m/logo.1138b289.png" onclick="openPopup(this)" />
+        </div>
+
+
+
+
+
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://betjili.live/assets/images/animation/loader.png" data-destination="https://betjili.live/ph/en">
+ <img class="post-content" src="https://betjili.live/assets/images/animation/loader.png" onclick="openPopup(this)" />
+        </div>
+
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSni9Irx2h-3Ot9bB7DtHFtKBZnW1smDHknwQ&usqp=CAU" data-destination="https://www.axiebet88.online/?mid=SFVB6L">
+ <img class="post-content" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSni9Irx2h-3Ot9bB7DtHFtKBZnW1smDHknwQ&amp;usqp=CAU" onclick="openPopup(this)" />
+        </div>
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/solowinf3/merchant_resource/appdownloadicon/wps_Solowin_black_logo_250250_APP_LOGO_20231217211150.png" data-destination="https://www.sololife.shop/m/home">
+ <img class="post-content" src="https://images.11029984.com/wsd-images-prod/solowinf3/merchant_resource/appdownloadicon/wps_Solowin_black_logo_250250_APP_LOGO_20231217211150.png" onclick="openPopup(this)" />
+        </div>
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/cmgamingf3/merchant_resource/appdownloadicon/wps_CMG_Logo_S_F_ICON_20240208130207.png" data-destination="https://www.cmgph.com/m/home">
+ <img class="post-content" src="https://images.11029984.com/wsd-images-prod/cmgamingf3/merchant_resource/appdownloadicon/wps_CMG_Logo_S_F_ICON_20240208130207.png" onclick="openPopup(this)" />
+        </div>
+
+
+<div class="casino-game" data-id="casino-game"  data-image="https://www.311jilipark.com/m/icons/icon-192x192.png" data-destination="http://www.35jilipark.vip/?r=qxe6931">
+ <img class="post-content" src="https://www.311jilipark.com/m/icons/icon-192x192.png" onclick="openPopup(this)" />
+        </div>
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.6929183.com/wsd-images-prod/wjtwof2/merchant_resource/appdownloadicon/wps_screenshot-2_(1)_20240219195111.png" data-destination="http://www.wjpesostore.in/?r=spi3164">
+ <img class="post-content" src="https://images.6929183.com/wsd-images-prod/wjtwof2/merchant_resource/appdownloadicon/wps_screenshot-2_(1)_20240219195111.png" onclick="openPopup(this)" />
+        </div>
+
+
+
+<div class="casino-game" data-id="casino-game"  data-image="https://www.luxeplay.ph/m/icons/icon-192x192.png" data-destination="http://www.luxeplay.ph/?referralCode=jdq7706">
+ <img class="post-content" src="https://www.luxeplay.ph/m/icons/icon-192x192.png" onclick="openPopup(this)" />
+        </div>
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.6929183.com/wsd-images-prod/filiplayf2/merchant_resource/appdownloadicon/app_download_icon_filiplayf2_20240528225832.jpg" data-destination="http://www.filiplay9.com/?r=bpt4839">
+ <img class="post-content" src="https://images.6929183.com/wsd-images-prod/filiplayf2/merchant_resource/appdownloadicon/app_download_icon_filiplayf2_20240528225832.jpg" onclick="openPopup(this)" />
+        </div>
+
+
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.1248593.com/wsd-images-prod/aabplayf4/merchant_resource/appdownloadicon/app_download_icon_aabplayf4_20240604224456.png" data-destination="http://ssvip888.aabplay2.vip/?referralCode=qbp8096">
+ <img class="post-content" src="https://images.1248593.com/wsd-images-prod/aabplayf4/merchant_resource/appdownloadicon/app_download_icon_aabplayf4_20240604224456.png" onclick="openPopup(this)" />
+        </div>
+
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/okjlf3/merchant_resource/appdownloadicon/wps_appicon-3_20240318185155.png" data-destination="http://www.55okjl.com/?r=hpg7577">
+ <img class="post-content" src="https://images.11029984.com/wsd-images-prod/okjlf3/merchant_resource/appdownloadicon/wps_appicon-3_20240318185155.png" onclick="openPopup(this)" />
+        </div>
+
+
+
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.3138722.com/wsd-images-prod/goal11phf2/merchant_resource/appdownloadicon/wps_APP-icon_20231022173101.png" data-destination="http://www.goal11.cam/?r=cjv2307">
+ <img class="post-content" src="https://images.3138722.com/wsd-images-prod/goal11phf2/merchant_resource/appdownloadicon/wps_APP-icon_20231022173101.png" onclick="openPopup(this)" />
+        </div>
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.1248593.com/wsd-images-prod/lago777f4/merchant_resource/appdownloadicon/app_download_icon_lago777f4_20240520110525.png" data-destination="https://www.lago777.net">
+ <img class="post-content" src="https://images.1248593.com/wsd-images-prod/lago777f4/merchant_resource/appdownloadicon/app_download_icon_lago777f4_20240520110525.png" onclick="openPopup(this)" />
+        </div>
+
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/biuntyf3/merchant_resource/appdownloadicon/wps_%E6%9C%AA%E5%91%BD%E5%90%8D_(225_x_225_%E5%83%8F%E7%B4%A0)_20240120095035.png" data-destination="https://www.bounty11.cc/m/member/home">
+ <img class="post-content" src="https://images.11029984.com/wsd-images-prod/biuntyf3/merchant_resource/appdownloadicon/wps_%E6%9C%AA%E5%91%BD%E5%90%8D_(225_x_225_%E5%83%8F%E7%B4%A0)_20240120095035.png" onclick="openPopup(this)" />
+        </div>
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/higfrolf3/merchant_resource/appdownloadicon/wps_app_logo_20231115204940.jpg" data-destination="https://www.highrollersclub.info/m/member/home">
+ <img class="post-content" src="https://images.11029984.com/wsd-images-prod/higfrolf3/merchant_resource/appdownloadicon/wps_app_logo_20231115204940.jpg" onclick="openPopup(this)" />
+        </div>
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://www.fortunesedge.net/m/logo.0b56c658.png" data-destination="https://www.fortunesedge.net/m/home">
+ <img class="post-content" src="https://www.fortunesedge.net/m/logo.0b56c658.png" onclick="openPopup(this)" />
+        </div>
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/majestyf3/merchant_resource/appdownloadicon/wps_MAJESTY33_-_Logo__250250_20240312005200.png" data-destination="https://www.majesty33.live">
+ <img class="post-content" src="https://images.11029984.com/wsd-images-prod/majestyf3/merchant_resource/appdownloadicon/wps_MAJESTY33_-_Logo__250250_20240312005200.png" onclick="openPopup(this)" />
+        </div>
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/richqf3/merchant_resource/appdownloadicon/wps_appicon_20240416204119.png" data-destination="http://www.richqueen.cc/?r=zpm5985">
+ <img class="post-content" src="https://images.11029984.com/wsd-images-prod/richqf3/merchant_resource/appdownloadicon/wps_appicon_20240416204119.png" onclick="openPopup(this)" />
+        </div>
+
+
+
+
+
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/glcasinof3/merchant_resource/appdownloadicon/wps_512_20240502214800.png" data-destination="https://www.grindloungecasino.club/m/member/home">
+ <img class="post-content" src="https://images.11029984.com/wsd-images-prod/glcasinof3/merchant_resource/appdownloadicon/wps_512_20240502214800.png" onclick="openPopup(this)" />
+        </div>
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/tereaf3/merchant_resource/appdownloadicon/wps_Diwata_LOGO_001_500_20240417105354.png" data-destination="http://www.diwataplay.com/?r=kwp3692">
+ <img class="post-content" src="https://images.11029984.com/wsd-images-prod/tereaf3/merchant_resource/appdownloadicon/wps_Diwata_LOGO_001_500_20240417105354.png" onclick="openPopup(this)" />
+        </div>
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.3138722.com/wsd-images-prod/bet31f2/merchant_resource/appdownloadicon/wps_bet31f2_app_20231219143408.png" data-destination="http://win999.126phcash.com/?referralCode=ksa5586"> <img class="post-content" src="https://images.3138722.com/wsd-images-prod/bet31f2/merchant_resource/appdownloadicon/wps_bet31f2_app_20231219143408.png" onclick="openPopup(this)" />         </div>
+
+ <div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/wk777tlbf3/merchant_resource/appdownloadicon/wps_WK777-512_appicon_20240303173627.jpg" data-destination="https://www.wk7771.com/register?r=fkq4354"> <img class="post-content" src="https://images.11029984.com/wsd-images-prod/wk777tlbf3/merchant_resource/appdownloadicon/wps_WK777-512_appicon_20240303173627.jpg" onclick="openPopup(this)" />         </div>
+  <div class="casino-game" data-id="casino-game" data-image="https://gwfd.qatgwawm.net/system-requirement/Web.Mobile/WH171-01.Mobile/Content/Views/Shared/images/logo.png" data-destination="https://m.agg779.win/?f=457745"> <img class="post-content" src="https://gwfd.qatgwawm.net/system-requirement/Web.Mobile/WH171-01.Mobile/Content/Views/Shared/images/logo.png" onclick="openPopup(this)" />         </div>
+        
+<div class="casino-game" data-id="casino-game"  data-image="https://download.ocms.cloud/v2/jln/Picture.3?version=3" data-destination="https://www.jilino1.online/?mid=mrtong"> <img class="post-content" src="https://download.ocms.cloud/v2/jln/Picture.3?version=3" onclick="openPopup(this)" />         </div>
+ <div class="casino-game" data-id="casino-game" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuc83lXmX55_B1YZQTldbUWihv5pbW4Jr2GA&amp;usqp" data-destination="https://www.swerte99.app/?mid=mrtong"> <img class="post-content" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuc83lXmX55_B1YZQTldbUWihv5pbW4Jr2GA&amp;usqp" onclick="openPopup(this)" />         </div>
+ 
+ <div class="casino-game" data-id="casino-game" data-image="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHWNM28vYXUmyiMy4H6fCcyj_Y39uweEh-gyCOilX9gme0SCGxrm2tAi33saEDAC21XW_jXk883bZ7BgiYOwT_X5d66dsHEvnpc2SfqEyl_hwHyLs3MVxI18jz9jmt7wQivkg2ulrwOjoRGVqu4eDlUH3WTj-4a1fDKrByqg6fPJ0IdeveHh7pBo8sRVk/s200/milyon88-.png" data-destination="https://www.milyon88.games/?mid=mrtong"> <img class="post-content" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHWNM28vYXUmyiMy4H6fCcyj_Y39uweEh-gyCOilX9gme0SCGxrm2tAi33saEDAC21XW_jXk883bZ7BgiYOwT_X5d66dsHEvnpc2SfqEyl_hwHyLs3MVxI18jz9jmt7wQivkg2ulrwOjoRGVqu4eDlUH3WTj-4a1fDKrByqg6fPJ0IdeveHh7pBo8sRVk/s200/milyon88-.png" onclick="openPopup(this)" />         </div>
+        
+<div class="casino-game" data-id="casino-game" data-image="https://gwfd.qatgwawm.net/system-requirement/Web.Mobile/WK693-01.Mobile/Content/Views/Shared/images/logo.png" data-destination="https://m.234win77.com/?a=201067"> <img class="post-content" src="https://gwfd.qatgwawm.net/system-requirement/Web.Mobile/WK693-01.Mobile/Content/Views/Shared/images/logo.png" onclick="openPopup(this)" />         </div>
+  <div class="casino-game" data-id="casino-game" data-image="https://images.b332411.com:42666/wsd-images-prod/ezwinf2/merchant_resource/appdownloadicon/wps_icon2_20230827012006.png" data-destination="https://www.ezwin.games/m/register?r=bfe9669"> <img class="post-content" src="https://images.b332411.com:42666/wsd-images-prod/ezwinf2/merchant_resource/appdownloadicon/wps_icon2_20230827012006.png" onclick="openPopup(this)" />         </div>
+ 
+ <div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/ayalaf3/merchant_resource/appdownloadicon/wps_512_x_512_Ayalawin_Option_1_-_App_Icon_20240214220045.png" data-destination="https://www.ayala2024.vip/register?r=nvk9258"> <img class="post-content" src="https://images.11029984.com/wsd-images-prod/ayalaf3/merchant_resource/appdownloadicon/wps_512_x_512_Ayalawin_Option_1_-_App_Icon_20240214220045.png" onclick="openPopup(this)" />         </div>
+        
+ <div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/phmayaf3/merchant_resource/appdownloadicon/wps_152_20240317143741.png" data-destination="https://www.31phmaya.com/register?r=brp8163"> <img class="post-content" src="https://images.11029984.com/wsd-images-prod/phmayaf3/merchant_resource/appdownloadicon/wps_152_20240317143741.png" onclick="openPopup(this)" />         </div>
+        
+ <div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/wagif3/merchant_resource/appdownloadicon/wps_icon_20240207170246.png" data-destination="https://www.wagi777.online/register?r=mnd3398"> <img class="post-content" src="https://images.11029984.com/wsd-images-prod/wagif3/merchant_resource/appdownloadicon/wps_icon_20240207170246.png" onclick="openPopup(this)" />         </div>
+        
+ <div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/win88f3/merchant_resource/appdownloadicon/wps_123132_20240404204030.png" data-destination="https://www.win888.pub/?r=plh2453"> <img class="post-content" src="https://images.11029984.com/wsd-images-prod/win88f3/merchant_resource/appdownloadicon/wps_123132_20240404204030.png" onclick="openPopup(this)" />         </div>
+  <div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/kuyaplayf3/merchant_resource/appdownloadicon/wps_App_Icon_512x512_20240202171744.png" data-destination="https://www.kuyaplay168.com/m/register?r=uas4558"> <img class="post-content" src="https://images.11029984.com/wsd-images-prod/kuyaplayf3/merchant_resource/appdownloadicon/wps_App_Icon_512x512_20240202171744.png" onclick="openPopup(this)" />         </div> 
+		
+  <div class="casino-game" data-id="casino-game" data-image="https://images.6929183.com/wsd-images-prod/akowin/merchant_resource/appdownloadicon/wps_icon-512_20230928203823.png" data-destination="http://zahnh.int.games/?referralCode=gcu4208"> <img class="post-content" src="https://images.6929183.com/wsd-images-prod/akowin/merchant_resource/appdownloadicon/wps_icon-512_20230928203823.png" onclick="openPopup(this)" />         </div> 
+  
+   <div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/phcityf3/merchant_resource/appdownloadicon/app_download_icon_phcityf3_20240606192432.png" data-destination="http://www.phcityvip.cc/?r=hwl0399"> <img class="post-content" src="https://images.11029984.com/wsd-images-prod/phcityf3/merchant_resource/appdownloadicon/app_download_icon_phcityf3_20240606192432.png" onclick="openPopup(this)" />         </div> 
+  <div class="casino-game" data-id="casino-game" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQQuqPWq5Gd5a2HGH2vE8qxvPw9qOEis8Kxg" data-destination="https://www.oke888.co/?referral=gg02442"> <img class="post-content" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQQuqPWq5Gd5a2HGH2vE8qxvPw9qOEis8Kxg" onclick="openPopup(this)" />         </div> 
+    
+    
+
+
+ <div class="casino-game" data-id="casino-game" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIObWvl0O_1oas0PYp0HHRYVhJsD57B5f-Tw&amp;usqp=CAU" data-destination="https://m.8k8app11.com/?f=1743524"> <img class="post-content" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIObWvl0O_1oas0PYp0HHRYVhJsD57B5f-Tw&amp;usqp=CAU" onclick="openPopup(this)" />         </div> 
+	 
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.1248593.com/wsd-images-prod/phhalikf4/merchant_resource/appdownloadicon/app_download_icon_phhalikf4_20240521154038.png" data-destination="http://www.11phhalik.com/?referralCode=uqw9943"> <img class="post-content" src="https://images.1248593.com/wsd-images-prod/phhalikf4/merchant_resource/appdownloadicon/app_download_icon_phhalikf4_20240521154038.png" onclick="openPopup(this)" />         </div> 
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/bet41f3/merchant_resource/appdownloadicon/wps_bet41f3_app_20240506171711.png" data-destination="http://www.89plusph.vip/?r=yec8148"> <img class="post-content" src="https://images.11029984.com/wsd-images-prod/bet41f3/merchant_resource/appdownloadicon/wps_bet41f3_app_20240506171711.png" onclick="openPopup(this)" />         </div> 
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/agilaf3/merchant_resource/appdownloadicon/wps_appicon_512_x_512__20240404181243.png" data-destination="http://www.agilaclub.live/?r=ynk7539"> <img class="post-content" src="https://images.11029984.com/wsd-images-prod/agilaf3/merchant_resource/appdownloadicon/wps_appicon_512_x_512__20240404181243.png" onclick="openPopup(this)" />         </div> 
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/bet36f3/merchant_resource/appdownloadicon/wps_bet36f3_app_20240223141547.png" data-destination="http://www.91aceph.club/?r=xhu9046"> <img class="post-content" src="https://images.11029984.com/wsd-images-prod/bet36f3/merchant_resource/appdownloadicon/wps_bet36f3_app_20240223141547.png" onclick="openPopup(this)" />         </div>  
+
+
+ <div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/668betphf3/merchant_resource/appdownloadicon/wps_logo-512x512_20240322212620.png" data-destination="http://www.ff777.ph/?r=wmm8712"> <img class="post-content" src="https://images.11029984.com/wsd-images-prod/668betphf3/merchant_resource/appdownloadicon/wps_logo-512x512_20240322212620.png" onclick="openPopup(this)" />         </div> 
+
+  
+				
+ <div class="casino-game" data-id="casino-game" data-image="https://images.6929183.com/wps-prod-upload/merchant_resource/lodibet/wps_APP%20icon_20220726193233.jpeg" data-destination="http://hytj333.lodislot365.com/?referralCode=pey0284"> <img class="post-content" src="https://images.6929183.com/wps-prod-upload/merchant_resource/lodibet/wps_APP%20icon_20220726193233.jpeg" onclick="openPopup(this)" />         </div> 
+                     
+
+ <div class="casino-game" data-id="casino-game" data-image="https://images.6929183.com/wsd-images-prod/jili999/merchant_resource/appdownloadicon/wps_APP_ICON_(2)_20230110165039.jpeg" data-destination="http://www.jilijackpots.com/?r=auv9280"> <img class="post-content" src="https://images.6929183.com/wsd-images-prod/jili999/merchant_resource/appdownloadicon/wps_APP_ICON_(2)_20230110165039.jpeg" onclick="openPopup(this)" />         </div> 
+        
+      
+ <div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/me777f3/fe_setting/h5_logo/wps_me777logoGIF-F2_20240621162647.gif" data-destination="https://www.me777.xyz/register?r=kep6590"> <img class="post-content" src="https://images.11029984.com/wsd-images-prod/me777f3/fe_setting/h5_logo/wps_me777logoGIF-F2_20240621162647.gif" onclick="openPopup(this)" />         </div> 
+			  
+			  
+			  
+			  
+<div class="casino-game" data-id="casino-game" data-image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxOj5Vy8k9gSMTbQYV7GSQRLj98mZ4UbH8Pg&s" data-destination="https://www.bouncingball.app?mid=%2FytnZi7eBjZ5tj48HlfPUQ%3D%3D"> <img class="post-content" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxOj5Vy8k9gSMTbQYV7GSQRLj98mZ4UbH8Pg&amp;s" onclick="openPopup(this)" />         </div> 
+			  
+			  
+	
+<div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/panalokaf3/template/wt8813_logo/wps_WEB_Logo_500x185_(2)_20240307114436.png" data-destination="http://www.panaloka3.com/?r=ybo9969">
+ <img class="popup-image" src="https://images.11029984.com/wsd-images-prod/panalokaf3/template/wt8813_logo/wps_WEB_Logo_500x185_(2)_20240307114436.png" onclick="openPopup(this)" />
+  
+        </div>
+      
+
+<div class="casino-game" data-id="casino-game" data-image="https://www.259aceph.cc/m/logo.fd4927bc.png" data-destination="https://www.259aceph.cc/?r=xhu9046">
+          <img class="popup-image"src="https://www.259aceph.cc/m/logo.fd4927bc.png" onclick="openPopup(this)" alt="259aceph"/>
+       
+      </div>
+      
+
+      <div class="casino-game" data-id="casino-game" data-image="https://images.6929183.com/wsd-images-prod/wj33f2/fe_setting/h5_logo/wps_PHMACAO%E8%B7%B3%E8%BD%AC%E5%9F%9F%E5%90%8Dlogo--500x144_(1)_20240701132941.gif" data-destination="https://www.phmacao.cam/?r=tux6050"> <img class="popup-image"src="https://images.6929183.com/wsd-images-prod/wj33f2/fe_setting/h5_logo/wps_PHMACAO%E8%B7%B3%E8%BD%AC%E5%9F%9F%E5%90%8Dlogo--500x144_(1)_20240701132941.gif" onclick="openPopup(this)" alt="phmacao"/>
+      
+       
+      </div>
+      
+        
+<div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/we1winphf3/merchant_resource/appdownloadicon/wps_APP_Icon_(3)_20231208172453.png" data-destination="https://www.we1winphp.com/?r=svh0886">
+ <img class="popup-image"src="https://images.11029984.com/wsd-images-prod/we1winphf3/merchant_resource/appdownloadicon/wps_APP_Icon_(3)_20231208172453.png" onclick="openPopup(this)" alt="we1winphf3"/>
+       
+      </div>
+      
+          
+<div class="casino-game" data-id="casino-game" data-image="https://www.66675621.com/m/logo.1748ee9f.png" data-destination="https://www.66675621.com/?r=wmm8712">
+    <img class="popup-image"src="https://www.66675621.com/m/logo.1748ee9f.png" onclick="openPopup(this)" alt="img 6" tabindex="0"/>
+   
+</div>     
+      
+      
+      <div class="casino-game" data-id="casino-game" data-image="https://images.6929183.com/wsd-images-prod/haha777f2/fe_setting/h5_logo/wps_%E4%B8%87%E5%9C%A3%E8%8A%82logo_20241015003036.gif" data-destination="https://www.goldenpalasyo.org">
+    <img class="popup-image"src="https://images.6929183.com/wsd-images-prod/haha777f2/fe_setting/h5_logo/wps_%E4%B8%87%E5%9C%A3%E8%8A%82logo_20241015003036.gif" onclick="openPopup(this)" alt=" haha777f2 " tabindex="0"/>
+   
+</div>
+
+ <div class="casino-game" data-id="casino-game" data-image="https://images.6929183.com/wsd-images-prod/goldpalace/template/wt8807_logo/wps_%E5%B9%B3%E5%8F%B0LOGO_20221203182708.png" data-destination=" ">
+    <img class="popup-image"src="https://images.6929183.com/wsd-images-prod/goldpalace/template/wt8807_logo/wps_%E5%B9%B3%E5%8F%B0LOGO_20221203182708.png" onclick="openPopup(this)" alt="goldpalace " tabindex="0"/>
+ 
+   
+</div>  
+      
+      <div class="casino-game" data-id="casino-game" data-image="popup-image"src="https://www.jlph3333.com/m/logo.050ab554.png" data-destination="https://www.jlph3333.com/?r=rrb0719">
+    <img class="popup-image"src="https://www.jlph3333.com/m/logo.050ab554.png" onclick="openPopup(this)" alt=" img " tabindex="0"/>
+
+   
+</div>
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/5jilif3/merchant_resource/appdownloadicon/wps_appicon_20240307023208.png" data-destination="https://www.jed6ra66.com">
+    <img class="popup-image"src="https://images.11029984.com/wsd-images-prod/5jilif3/merchant_resource/appdownloadicon/wps_appicon_20240307023208.png" onclick="openPopup(this)" alt="5jilif3" tabindex="0"/>
+ 
+   
+</div>
+<div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/phjlf3/merchant_resource/appdownloadicon/wps_appicon_20240117012204.png" data-destination="https://www.phjl.online/m/index.html">
+    <img class="popup-image"src="https://images.11029984.com/wsd-images-prod/phjlf3/merchant_resource/appdownloadicon/wps_appicon_20240117012204.png" onclick="openPopup(this)" alt="phjlf3" tabindex="0"/>
+   
+</div>
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.11029984.com/wsd-images-prod/abcjilif3/merchant_resource/appdownloadicon/wps_250x250_20240208175514.png" data-destination="https://www.abcjili9.com/m/index.html">
+    <img class="popup-image"src="https://images.11029984.com/wsd-images-prod/abcjilif3/merchant_resource/appdownloadicon/wps_250x250_20240208175514.png" onclick="openPopup(this)" alt=" img " tabindex="0"/>
+ 
+   
+</div>
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.6929183.com/wsd-images-prod/slotphf2/merchant_resource/appdownloadicon/app_download_icon_slotphf2_20241011154541.png" data-destination="https://www.jilivip09.com/m/index.html">
+    <img class="popup-image" src="https://images.6929183.com/wsd-images-prod/slotphf2/merchant_resource/appdownloadicon/app_download_icon_slotphf2_20241011154541.png" onclick="openPopup(this)" alt=" img " tabindex="0"/>
+ 
+   
+</div>
+
+
+
+
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://todaybet.games/images/logo.png" data-destination="https://www.todaybet.com">
+    <img class="popup-image"src="https://todaybet.games/images/logo.png" onclick="openPopup(this)" alt=" todaybet " tabindex="0"/>
+   
+</div>
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.1138403.com/wsd-images-prod/iq777tlbf4/fe_setting/h5_logo/wps_LOGO-%E5%A4%A7%E5%B0%BA%E5%AF%B811_20240728134713.png" data-destination="http://www.iq777.mobi/?r=nli8626">
+ <img class="post-content" src="https://images.1138403.com/wsd-images-prod/iq777tlbf4/fe_setting/h5_logo/wps_LOGO-%E5%A4%A7%E5%B0%BA%E5%AF%B811_20240728134713.png" onclick="openPopup(this)" />
+        </div>
+        
+        
+        
+        
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.1248593.com/wsd-images-prod/magicjlf4/merchant_resource/appdownloadicon/app_download_icon_magicjlf4_20240820123010.png" data-destination="https://dxcf1025.magicjili.xyz/?referralCode=lrl8901">
+ <img class="post-content" src="https://images.1248593.com/wsd-images-prod/magicjlf4/merchant_resource/appdownloadicon/app_download_icon_magicjlf4_20240820123010.png" onclick="openPopup(this)" />
+        </div>
+
+
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.6929183.com/wsd-images-prod/wjtwof2/merchant_resource/appdownloadicon/wps_screenshot-2_(1)_20240219195111.png" data-destination="http://www.wjpesogame.store/?r=spi3164">
+ <img class="post-content" src="https://images.6929183.com/wsd-images-prod/wjtwof2/merchant_resource/appdownloadicon/wps_screenshot-2_(1)_20240219195111.png" onclick="openPopup(this)" />
+        </div>
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://www.animb6.com/m/logo.ab46edf0.gif" data-destination="http://www.animk6.com/?r=uhs5566">
+ <img class="post-content" src="https://www.animb6.com/m/logo.ab46edf0.gif" onclick="openPopup(this)" />
+        </div>
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.6929183.com/wsd-images-prod/winfordbet/merchant_resource/appdownloadicon/app_download_icon_winfordbet_20241011191921.png" data-destination="http://www.perawin7.vip/?r=vdh4882">
+ <img class="post-content" src="https://images.6929183.com/wsd-images-prod/winfordbet/merchant_resource/appdownloadicon/app_download_icon_winfordbet_20241011191921.png" onclick="opePopup(this)" />
+        </div>
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://www.nfh78.com/m/logo.1138b289.png" data-destination="http://www.t318win.com/?r=gli3552">
+ <img class="post-content" src="https://www.nfh78.com/m/logo.1138b289.png" onclick="openPopup(this)" />
+        </div>
+
+
+
+
+
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://betjili.live/assets/images/animation/loader.png" data-destination="https://betjili.live/ph/en">
+ <img class="post-content" src="https://betjili.live/assets/images/animation/loader.png" onclick="openPopup(this)" />
+        </div>
+
+
+
+
+<div class="casino-game" data-id="casino-game" data-image="https://images.6929183.com/wsd-images-prod/jpcity/merchant_resource/appdownloadicon/wps_152x152_20230704142632.jpg" data-destination="https://www.gojackpot7.com">
+    <img class="popup-image"src="https://images.6929183.com/wsd-images-prod/jpcity/merchant_resource/appdownloadicon/wps_152x152_20230704142632.jpg" onclick="openPopup(this)" alt=" img " tabindex="0"/>
+   
+</div>
+		  
+			  
+			  </div> </section>
+			  
+			  
+    
+    
+        <!--==============================
+Casino Game Area  
+==============================-->
+
+    
+    
+    
+    
     <!--==============================
 About Area  
 ==============================-->
+
+
+
+
+
+
     <div class="space" id="about-sec">
         <div class="shape-mockup" data-top="0" data-right="0"><img src="assets/img/shape/pattern_shape_1.png" alt="shape"></div>
         <div class="shape-mockup jump" data-bottom="10%" data-right="3%"><img src="assets/img/shape/medicine_1.png" alt="shape"></div>
